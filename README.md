@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/GW_bunner.png" width="100%">
+</p>
 # GRAY_WHALE_CO
 
 ```txt id="9w2m1x"
