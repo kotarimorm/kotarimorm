@@ -1,27 +1,31 @@
 <svg width="420" height="620" viewBox="0 0 420 620" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="mainBg" x1="420" y1="0" x2="0" y2="620">
-      <stop offset="0%" stop-color="#000000"/>
-      <stop offset="28%" stop-color="#050505"/>
-      <stop offset="58%" stop-color="#303030"/>
-      <stop offset="82%" stop-color="#D0D0D0"/>
-      <stop offset="100%" stop-color="#FFFFFF"/>
+    <linearGradient id="bg" x1="420" y1="0" x2="0" y2="620">
+      <stop offset="0%" stop-color="#0B1624"/>
+      <stop offset="42%" stop-color="#050B14"/>
+      <stop offset="100%" stop-color="#02040A"/>
     </linearGradient>
 
-    <radialGradient id="glow" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.26"/>
-      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <linearGradient id="steel" x1="0" y1="0" x2="420" y2="0">
+      <stop offset="0%" stop-color="#5D6673" stop-opacity="0.15"/>
+      <stop offset="35%" stop-color="#D8DEE9" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#6B7280" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#9CCBFF" stop-opacity="0.24"/>
+      <stop offset="45%" stop-color="#9CCBFF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#9CCBFF" stop-opacity="0"/>
     </radialGradient>
 
-    <linearGradient id="strokeGrad" x1="0" y1="0" x2="420" y2="0">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    <linearGradient id="panel" x1="0" y1="120" x2="420" y2="560">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#02040A" stop-opacity="0.94"/>
     </linearGradient>
 
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -29,149 +33,158 @@
     </filter>
   </defs>
 
-  <!-- Card background -->
-  <rect x="10" y="10" width="400" height="600" rx="38" fill="url(#mainBg)"/>
-  <rect x="10.5" y="10.5" width="399" height="599" rx="37.5" stroke="url(#strokeGrad)" stroke-width="1.5"/>
+  <!-- Background -->
+  <rect x="10" y="10" width="400" height="600" rx="22" fill="url(#bg)"/>
+  <rect x="10.5" y="10.5" width="399" height="599" rx="21.5" stroke="url(#steel)" stroke-width="1.2"/>
 
-  <!-- Glow overlay -->
-  <rect x="10" y="10" width="400" height="600" rx="38" fill="url(#glow)"/>
+  <!-- Cold glow -->
+  <rect x="10" y="10" width="400" height="600" rx="22" fill="url(#glow)"/>
 
-  <!-- Giant background mark -->
-  <text x="210" y="185" text-anchor="middle"
-        fill="#FFFFFF" fill-opacity="0.11"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="84" font-weight="900" letter-spacing="-5">
-    OS
-  </text>
+  <!-- Technical diagonal shapes -->
+  <path d="M10 118 L140 10 H410 V92 L300 132 H10 Z" fill="#FFFFFF" fill-opacity="0.035"/>
+  <path d="M410 452 L260 610 H410 Z" fill="#9CCBFF" fill-opacity="0.05"/>
+  <path d="M10 520 L115 610 H10 Z" fill="#FFFFFF" fill-opacity="0.035"/>
 
   <!-- Top brand -->
-  <text x="34" y="56"
-        fill="#FFFFFF"
+  <text x="32" y="50"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="13" font-weight="900" letter-spacing="3">
+        font-size="12" font-weight="900" letter-spacing="3">
     GRAY_WHALE_CO
   </text>
 
-  <rect x="306" y="34" width="70" height="32" rx="16" fill="#FFFFFF"/>
-  <text x="341" y="55" text-anchor="middle"
-        fill="#000000"
+  <!-- Whale/W abstract mark -->
+  <g transform="translate(315 31)">
+    <path d="M8 25 C18 2, 31 2, 40 25 C49 2, 62 2, 72 25"
+          stroke="url(#steel)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M18 30 C28 43, 52 43, 62 30"
+          stroke="#D8DEE9" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.75"/>
+  </g>
+
+  <!-- Separator -->
+  <rect x="32" y="83" width="356" height="1.2" fill="url(#steel)" opacity="0.8"/>
+
+  <!-- Main panel -->
+  <rect x="32" y="118" width="356" height="402" rx="18" fill="url(#panel)"/>
+  <rect x="32.5" y="118.5" width="355" height="401" rx="17.5" stroke="#D8DEE9" stroke-opacity="0.12"/>
+
+  <!-- Large faded title mark -->
+  <text x="210" y="244" text-anchor="middle"
+        fill="#FFFFFF" fill-opacity="0.045"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12" font-weight="900">
-    BETA
+        font-size="76" font-weight="900" letter-spacing="-3">
+    OSDEV
   </text>
 
-  <!-- Dark information panel -->
-  <rect x="30" y="120" width="360" height="430" rx="28" fill="#050505" fill-opacity="0.88"/>
-  <rect x="30.5" y="120.5" width="359" height="429" rx="27.5" stroke="#FFFFFF" stroke-opacity="0.18"/>
-
   <!-- Project title -->
-  <text x="54" y="174"
-        fill="#FFFFFF"
+  <text x="56" y="175"
+        fill="#F5F7FA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="31" font-weight="900" letter-spacing="0.5"
-        filter="url(#softGlow)">
+        font-size="30" font-weight="900" letter-spacing="0.5"
+        filter="url(#textGlow)">
     tech_teach_OS
   </text>
 
-  <text x="56" y="207"
-        fill="#BEBEBE"
+  <text x="58" y="204"
+        fill="#9CCBFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="15" font-weight="700">
-    OSDev reference stand for
+        font-size="13" font-weight="900" letter-spacing="2">
+    OSDEV REFERENCE STAND
   </text>
 
-  <text x="56" y="231"
-        fill="#BEBEBE"
+  <text x="58" y="235"
+        fill="#AEB7C2"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="15" font-weight="700">
-    kernels, drivers and debugging.
+        font-size="14" font-weight="700">
+    Independent low-level snippets
   </text>
 
-  <!-- Topic grid -->
-  <rect x="54" y="270" width="312" height="92" rx="18" fill="#111111" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="58" y="257"
+        fill="#AEB7C2"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="14" font-weight="700">
+    for kernels, drivers and debugging.
+  </text>
 
-  <text x="78" y="300"
-        fill="#FFFFFF"
+  <!-- Topic box -->
+  <rect x="56" y="298" width="308" height="92" rx="12" fill="#02040A" stroke="#D8DEE9" stroke-opacity="0.16"/>
+
+  <text x="78" y="327"
+        fill="#F5F7FA"
         font-family="monospace"
         font-size="14" font-weight="700">
     GDT · IDT · PIC · ISR
   </text>
 
-  <text x="78" y="326"
-        fill="#FFFFFF"
+  <text x="78" y="352"
+        fill="#F5F7FA"
         font-family="monospace"
         font-size="14" font-weight="700">
     PIT · Paging · PMM
   </text>
 
-  <text x="78" y="346"
-        fill="#8E8E8E"
+  <text x="78" y="374"
+        fill="#6F7A88"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="700">
     VGA · PS/2 · ATA · PCI · panic debug
   </text>
 
   <!-- Tags -->
-  <rect x="54" y="390" width="82" height="34" rx="17" fill="#FFFFFF"/>
-  <text x="95" y="412" text-anchor="middle"
-        fill="#000000"
+  <rect x="56" y="418" width="72" height="30" rx="8" fill="#D8DEE9"/>
+  <text x="92" y="438" text-anchor="middle"
+        fill="#02040A"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="900">
     BETA
   </text>
 
-  <rect x="146" y="390" width="72" height="34" rx="17" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.28"/>
-  <text x="182" y="412" text-anchor="middle"
-        fill="#FFFFFF"
+  <rect x="138" y="418" width="66" height="30" rx="8" fill="#0B1624" stroke="#D8DEE9" stroke-opacity="0.28"/>
+  <text x="171" y="438" text-anchor="middle"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="900">
     x86
   </text>
 
-  <rect x="228" y="390" width="86" height="34" rx="17" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.28"/>
-  <text x="271" y="412" text-anchor="middle"
-        fill="#FFFFFF"
+  <rect x="214" y="418" width="80" height="30" rx="8" fill="#0B1624" stroke="#D8DEE9" stroke-opacity="0.28"/>
+  <text x="254" y="438" text-anchor="middle"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="900">
     NASM
   </text>
 
-  <rect x="54" y="438" width="132" height="34" rx="17" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.28"/>
-  <text x="120" y="460" text-anchor="middle"
-        fill="#FFFFFF"
+  <rect x="56" y="460" width="118" height="30" rx="8" fill="#0B1624" stroke="#D8DEE9" stroke-opacity="0.28"/>
+  <text x="115" y="480" text-anchor="middle"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="900">
-    reference stand
+    reference kit
   </text>
 
-  <rect x="196" y="438" width="118" height="34" rx="17" fill="#1A1A1A" stroke="#FFFFFF" stroke-opacity="0.28"/>
-  <text x="255" y="460" text-anchor="middle"
-        fill="#FFFFFF"
+  <rect x="184" y="460" width="108" height="30" rx="8" fill="#0B1624" stroke="#D8DEE9" stroke-opacity="0.28"/>
+  <text x="238" y="480" text-anchor="middle"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
         font-size="12" font-weight="900">
-    OSDev kit
+    debug notes
   </text>
 
-  <!-- Bottom description -->
-  <text x="56" y="505"
-        fill="#BEBEBE"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="13" font-weight="700">
-    When your kernel explodes at 3 AM,
-  </text>
+  <!-- Bottom CTA -->
+  <rect x="32" y="548" width="356" height="1.2" fill="url(#steel)" opacity="0.55"/>
 
-  <text x="56" y="527"
-        fill="#BEBEBE"
+  <text x="32" y="583"
+        fill="#D8DEE9"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="13" font-weight="700">
-    open the reference and find the missing piece.
-  </text>
-
-  <!-- CTA -->
-  <text x="34" y="582"
-        fill="#000000"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="13" font-weight="900" letter-spacing="2">
+        font-size="12" font-weight="900" letter-spacing="2.5">
     OPEN REFERENCE →
+  </text>
+
+  <text x="290" y="583"
+        fill="#6F7A88"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11" font-weight="800">
+    GRAY_WHALE_CO
   </text>
 </svg>
