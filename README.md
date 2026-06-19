@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/GW_bunner.png" width="100%">
+  <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/GW_bunner2.png" width="100%">
 </p>
 
 <h1 align="center">GRAY_WHALE_CO</h1>
