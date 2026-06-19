@@ -34,18 +34,22 @@ If something breaks, I want to know why.
 
 <p align="center">
   <a href="https://github.com/kotarimorm/SENTINEL_LANG">
-    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/sentinel.svg" width="49%">
+    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/sentinel.svg" width="48%">
   </a>
   <a href="https://github.com/kotarimorm/tech_teach_OS-BETA-">
-    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/tech_teach_os.svg" width="49%">
+    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/tech_teach_os.svg" width="48%">
   </a>
 </p>
 
-| Project | Status | Focus |
+---
+
+## Project Matrix
+
+| Project | Status | What It Is |
 |---|---|---|
-| [`SENTINEL_LANG`](https://github.com/kotarimorm/SENTINEL_LANG) | `v0.2-alpha` | experimental low-level language compiling to NASM |
+| [`SENTINEL_LANG`](https://github.com/kotarimorm/SENTINEL_LANG) | `v0.2-alpha` | experimental low-level language compiling `.sl` into NASM |
 | [`tech_teach_OS`](https://github.com/kotarimorm/tech_teach_OS-BETA-) | `BETA` | OSDev reference stand for low-level kernel work |
-| `GRAY_WHALE_CO` | active | systems tooling, research, experiments |
+| `GRAY_WHALE_CO` | active | systems tooling, experiments, research direction |
 
 ---
 
@@ -62,50 +66,7 @@ If something breaks, I want to know why.
 
 ---
 
-## SENTINEL_LANG
-
-Experimental systems language focused on OSDev and low-level code generation.
-
-```text
-.sl source
-    │
-    ▼
-Lexer / Parser / AST
-    │
-    ▼
-NASM Assembly
-    │
-    ▼
-Flat Binary
-```
-
-Current focus:
-
-- x64 compiler pipeline
-- NASM code generation
-- function system
-- arrays and indexing
-- low-code byte emission
-- future OSDev standard libraries
-
----
-
-## tech_teach_OS
-
-Reference stand for low-level operating system development.
-
-```text
-GDT / IDT / PIC / ISR / PIT / Paging
-VGA / PS/2 / ATA / PCI / PMM / Panic / Debug
-```
-
-Purpose:
-
-> When your kernel explodes at 3 AM, open the reference and find the missing piece.
-
----
-
-## Engineering Style
+## Engineering Loop
 
 ```text
 Read the failure.
@@ -126,6 +87,7 @@ Document the result.
 4. Build a demo kernel.
 5. Push toward larger systems.
 ```
+
 ---
 
 ## Philosophy
