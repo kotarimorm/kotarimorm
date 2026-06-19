@@ -34,7 +34,7 @@ If something breaks, I want to know why.
 
 <p align="center">
   <a href="https://github.com/kotarimorm/SENTINEL_LANG">
-    <img src="https://raw.githubusercontent.com/kotarimorm/kotarimorm/main/assets/cards/sentinel3.svg?v=3" width="48%">
+    <img src="https://raw.githubusercontent.com/kotarimorm/kotarimorm/main/assets/cards/sentinel_3.svg?v=3" width="48%">
   </a>
   <a href="https://github.com/kotarimorm/tech_teach_OS-BETA-">
     <img src="https://raw.githubusercontent.com/kotarimorm/kotarimorm/main/assets/cards/tech_teach_os3.svg?v=3" width="48%">
