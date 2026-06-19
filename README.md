@@ -34,10 +34,10 @@ If something breaks, I want to know why.
 
 <p align="center">
   <a href="https://github.com/kotarimorm/SENTINEL_LANG">
-    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/sentinel.svg" width="48%">
+    <img src="https://raw.githubusercontent.com/kotarimorm/kotarimorm/main/assets/cards/sentinel.svg?v=3" width="48%">
   </a>
   <a href="https://github.com/kotarimorm/tech_teach_OS-BETA-">
-    <img src="https://github.com/kotarimorm/kotarimorm/blob/main/assets/cards/tech_teach_os.svg" width="48%">
+    <img src="https://raw.githubusercontent.com/kotarimorm/kotarimorm/main/assets/cards/tech_teach_os.svg?v=3" width="48%">
   </a>
 </p>
 
