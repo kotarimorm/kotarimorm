@@ -126,7 +126,17 @@ Document the result.
 4. Build a demo kernel.
 5. Push toward larger systems.
 ```
+<p align="center">
+  <a href="https://github.com/kotarimorm/SENTINEL_LANG">
+    <img src="assets/cards/sentinel.svg" width="360">
+  </a>
+</p>
 
+<p align="center">
+  <a href="https://github.com/kotarimorm/tech_teach_OS-BETA-">
+    <img src="assets/cards/tech_teach_os.svg" width="360">
+  </a>
+</p>
 ---
 
 ## Philosophy
