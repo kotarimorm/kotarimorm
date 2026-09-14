@@ -47,7 +47,7 @@ If something breaks, I want to know why.
 
 | Project | Status | What It Is |
 |---|---|---|
-| [`SENTINEL_LANG`](https://github.com/kotarimorm/SENTINEL_LANG) | `v0.2-alpha` | experimental low-level language compiling `.sl` into NASM |
+| [`SENTINEL_LANG`](https://github.com/kotarimorm/SENTINEL_LANG) | `v0.6-alpha` | experimental low-level language compiling `.sl` into NASM |
 | [`tech_teach_OS`](https://github.com/kotarimorm/tech_teach_OS-BETA-) | `BETA` | OSDev reference stand for low-level kernel work |
 | `GRAY_WHALE_CO` | active | systems tooling, experiments, research direction |
 
