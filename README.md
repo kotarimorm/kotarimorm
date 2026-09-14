@@ -5,8 +5,9 @@
 <h1 align="center">GRAY_WHALE_CO</h1>
 
 <p align="center">
-  <b>Systems programming · OSDev · compilers · low-level tooling
-  GRAY_WHALE_CO is an independent personal project umbrella created by kotarimorm.
+  <b>Systems programming · OSDev · compilers · low-level tooling</b>
+</p>
+<p alingn="center">GRAY_WHALE_CO is an independent personal project umbrella created by kotarimorm.
 
 It is not a registered company.
 
@@ -14,7 +15,6 @@ Main projects:
 
 - **Sentinel Lang** — an experimental OSDev-first programming language.
 - **tech_teach_OS** — a practical x86/NASM OSDev reference project.</b>
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/OSDev-000000?style=for-the-badge"/>
